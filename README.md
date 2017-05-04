@@ -19,8 +19,7 @@ Once I have populated the list with all of the lines from the source text, I pri
 
 The title is achieved by printing the results of a call to function `Markov_Example.word_level_generate`. 
 
-```print "\n".join(Markov_Example.word_level_generate(lines, 1, count=1))
-```
+```print "\n".join(Markov_Example.word_level_generate(lines, 1, count=1))```
 
 I use `.join` to make the result a string. 
 
@@ -28,8 +27,7 @@ This produces a higher level n-gram, which consistently produces more readable t
 
 For the body of the poem, I join the results of a call to function `Markov_Example.char_level_generate` along new line breaks.
 
-```print "\n".join(Markov_Example.char_level_generate(lines, 5, count=15))
-```
+```print "\n".join(Markov_Example.char_level_generate(lines, 5, count=15))```
 
 I can tweak the n-gram lengths and number of lines to return to get different results. I have uploaded three of my favorite results. 
 
