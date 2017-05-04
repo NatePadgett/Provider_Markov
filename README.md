@@ -29,7 +29,7 @@ For the body of the poem, I join the results of a call to function `Markov_Examp
 
 ```print "\n".join(Markov_Example.char_level_generate(lines, 5, count=15))```
 
-I can tweak the n-gram lengths and number of lines to return to get different results. I have uploaded three of my favorite results. 
+I can tweak the n-gram lengths and number of lines to return to get different results. I have uploaded three of my favorites to this repo. 
 
 [Winter Came as I Was Old and Alone](https://github.com/NatePadgett/Provider_Markov/blob/master/Winter_came_and_I_was_old_and_alone.txt)
 
