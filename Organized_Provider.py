@@ -1,11 +1,11 @@
-import sys
 import Markov_Example
-import re
 
-def split_upper(s):
-    return filter(None, re.split("([A-Z][^A-Z]*)", s))
+lines = list()
 
-text = sys.stdin.read()
-model = Markov_Example.build_model(split_upper(text), 6) #text.split(), )
-generated = Markov_Example.generate(model, 6)
-print ' '.join(generated)
+for line in open("Midlake_Provider.txt"):
+    line = line.strip()
+    lines.append(line)
+
+print "\n".join(Markov_Example.word_level_generate(lines, 1, count=1))
+print " "
+print "\n".join(Markov_Example.char_level_generate(lines, 5, count=15))
